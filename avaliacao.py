@@ -30,7 +30,3 @@ with open ("filmes.txt","r") as filmes:
 
             with open ("filmes_avaliacao.txt","a") as arquivo:
                 arquivo.write(f'{inf[0]},{inf[1]},{avaliacao};')
-
-       
-
-
