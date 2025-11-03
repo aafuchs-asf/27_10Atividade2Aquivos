@@ -29,5 +29,3 @@ with open ("filmes.txt","a") as filme:
         filme.write(f'{nome},{data};')
 
         x = continuar()
-
-
