@@ -1,0 +1,1 @@
+[(' 2018', ' Ready Player One', 10.0), (' 1982', ' TRON', 9.5), (' 1999', ' Pirates of Silicon Valley', 8.3), (' 1995', ' Hackers', 7.9), (' 2010', ' The Social Network', 7.8)]

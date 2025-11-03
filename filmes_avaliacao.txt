@@ -1,1 +1,1 @@
-tron,10;wargames,5;Hackers,3;
+ 1982, TRON,9.5; 1983, WarGames,5.8; 1995, Hackers,7.9; 1999, Pirates of Silicon Valley,8.3; 2010, The Social Network,7.8; 2013, Jobs,2.8; 2014, The Imitation Game,3.5; 2014, Ex Machina,7.5; 2016, Snowden,5.5; 2018, Ready Player One,10.0;

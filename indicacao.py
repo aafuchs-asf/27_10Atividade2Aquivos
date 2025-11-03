@@ -1,28 +1,9 @@
-def ordem(relacao):
-    maior = relacao[0]
-    print(maior)
-
-    for i in range (len(relacao)):
-
-        if maior < relacao[i]:
-
-            maior = relacao[i]
-            
-            print(f'{maior} relacao')
-
-    #     if maior < relacao[i]:
-
-    #         mais = relacao[i]
-
-    #         print(f'{mais} esse é o maior')
-
-    #     print(f'{maior} maior')
-
 
 with open ("filmes_avaliacao.txt","r") as filmes:
     linhas = filmes.read()
     filme = linhas.split(';')
     lista = []
+    filmes_top5 = []
 
     for nota in filme:
 
@@ -30,21 +11,16 @@ with open ("filmes_avaliacao.txt","r") as filmes:
 
         if (inf[0] != ''):
 
-            lista.append(f'{inf[1]}')
+
+            lista.append((inf[0], inf[1], float(inf[2])))
             print(lista)
 
-            maior = lista[0]
 
-            for i in range (0, len(lista), 1):
+    lista.sort(key = lambda x: (-x[2], x[1]))
+    filmes5 = lista[:5]
+    print(f'{filmes5} : top 5')
 
-                print(f'{lista[i]} - lista for')
-                print(f'{maior} maior')
 
-                if maior < lista[i]:
 
-                    maior = lista[i]
-                    
-                    print(f'{maior} maior fim')
-
-        #     with open ("filmes_indicacao.txt", "a") as arquivo:
-        #         arquivo.write(f'{inf[0]},{avaliacao};')
+    with open ("filmes_indicacao.txt", "a") as arquivo:
+        arquivo.write(f'{filmes5}')

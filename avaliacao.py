@@ -1,9 +1,9 @@
 def nota():
     try:
         while True:
-            avaliacao = int(input(f'Avalie o filme {inf[0]} de 0 a 10: '))
+            avaliacao = float(input(f'Avalie o filme {inf[1]} de 0 a 10: '))
 
-            if avaliacao >= 0 or avaliacao <= 10:
+            if avaliacao >= 0 and avaliacao <= 10:
 
                 return str(avaliacao)
             
@@ -29,7 +29,7 @@ with open ("filmes.txt","r") as filmes:
 
 
             with open ("filmes_avaliacao.txt","a") as arquivo:
-                arquivo.write(f'{inf[0]},{avaliacao};')
+                arquivo.write(f'{inf[0]},{inf[1]},{avaliacao};')
 
        
 
